@@ -1,4 +1,11 @@
-# ProfitBricks CLI
+# ProfitBricks CLI Modified Output
+
+This was forked from [https://github.com/profitbricks/profitbricks-cli](https://github.com/profitbricks/profitbricks-cli)
+
+Changed and new stuff
+* Additionally added vmstate in server show and server list.
+* New server vmastate option for only printing out the vmstate
+
 
 # Table of Contents
 

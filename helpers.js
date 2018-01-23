@@ -11,6 +11,7 @@ exports.setContractResource = setContractResource
 exports.setJson = setJson
 exports.setForce = setForce
 exports.force = force
+exports.getValidResponseBody = getValidResponseBody
 
 var authFile = (process.env.HOME || process.env.USERPROFILE) + '/.profitbricks-auth'
 
@@ -267,7 +268,8 @@ function printServer(info) {
         AvailabilityZone: info.properties.availabilityZone,
         State: info.metadata.state,
         Cores: info.properties.cores,
-        Memory: info.properties.ram + "MB"
+        Memory: info.properties.ram + "MB",
+        VmState: info.properties.vmState
     }
 }
 

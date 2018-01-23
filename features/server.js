@@ -20,6 +20,12 @@ function processServer(params) {
         case 'show':
             pbclient.getServer(params.datacenterid, params.id, helpers.printInfo)
             break
+        case 'vmstate':
+            pbclient.getServer(params.datacenterid, params.id, function(error, response, body){
+                var info = helpers.getValidResponseBody(error, response, body)
+                console.log(info.properties.vmState);
+            })
+            break;
         case 'create':
             createServer(params)
             break
